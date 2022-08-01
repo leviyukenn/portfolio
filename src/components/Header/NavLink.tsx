@@ -14,7 +14,7 @@ const NavLink = ({ href, children, className, ...props }: NavLinkProps) => {
     <Link href={href}>
       <a
         className={
-          "text-3xl text-zinc-50/75 hover:text-zinc-50/100 cursor-pointer p2" +
+          "text-xl text-zinc-50/75 hover:text-zinc-50/100 cursor-pointer px-2" +
           " " +
           className
         }

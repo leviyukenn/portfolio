@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+    },
+    fontFamily:{
+      "main":["Space Grotesk, sans-serif"],
+      "title":["Space Grotesk, sans-serif"]
+    }
   },
   plugins: [],
 };
