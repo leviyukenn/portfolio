@@ -8,6 +8,10 @@
     @apply m-0;
     @apply p-0;
   }
+  html {
+    @apply sm:text-[20px];
+    @apply md:text-[24px];
+  }
   body {
 
     @apply font-main;
