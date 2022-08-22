@@ -1,5 +1,8 @@
 import { IconType } from "react-icons";
+import { FaDev } from "react-icons/fa";
+import { GoBrowser, GoServer } from "react-icons/go";
 import { GrGolang, GrReactjs } from "react-icons/gr";
+
 import {
   SiAmazonaws,
   SiAntdesign,
@@ -40,6 +43,21 @@ export interface Technology {
   description: string;
 }
 
+export interface TechnologyCategory {
+  name: TechnologyCategoryName;
+  icon: IconType;
+  technologies: TechName[];
+}
+
+export enum TechnologyCategoryName {
+  ALL = "All",
+  FRONTEND = "Frontend",
+  BACKEND = "Backend",
+  PROGRAMING_LANGUAGE = "Programming Language",
+  EDITOR = "Editor/IDE",
+  DEVOPS = "Devops",
+}
+
 export const createTechnology = (
   name: TechName,
   icon: IconType,
@@ -55,6 +73,18 @@ export const createTechnology = (
     image,
     backgroundColor,
     description,
+  };
+};
+
+export const createTechnologyCategory = (
+  name: TechnologyCategoryName,
+  icon: IconType,
+  technologies: TechName[]
+): TechnologyCategory => {
+  return {
+    name,
+    icon,
+    technologies,
   };
 };
 
@@ -100,7 +130,7 @@ export const techStackMap = new Map<TechName, Technology>([
       "https://reactjs.org/",
       "/images/techStack/React.png",
       "rgb(132,220,236)",
-      "JavaScript library."
+      "JavaScript library"
     ),
   ],
   [
@@ -133,7 +163,7 @@ export const techStackMap = new Map<TechName, Technology>([
       "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "/images/techStack/javascript.png",
       "#EFD847",
-      "Programming language."
+      "Programming language"
     ),
   ],
   [
@@ -144,7 +174,7 @@ export const techStackMap = new Map<TechName, Technology>([
       "https://www.typescriptlang.org/",
       "/images/techStack/typescript.png",
       "#3279C3",
-      "JavaScript with syntax for types."
+      "JavaScript with syntax for types"
     ),
   ],
   [
@@ -397,7 +427,7 @@ export const techStackMap = new Map<TechName, Technology>([
       "https://www.eclipse.org/",
       "/images/techStack/eclipse.png",
       "#2C2252",
-      "Editor"
+      "IDE"
     ),
   ],
   [
@@ -408,7 +438,7 @@ export const techStackMap = new Map<TechName, Technology>([
       "https://www.jetbrains.com/idea/",
       "/images/techStack/idea.png",
       "#fff",
-      "Editor"
+      "IDE"
     ),
   ],
   [
@@ -419,7 +449,84 @@ export const techStackMap = new Map<TechName, Technology>([
       "https://www.jetbrains.com/go/",
       "/images/techStack/goland.png",
       "#fff",
-      "Editor"
+      "IDE"
+    ),
+  ],
+]);
+
+export const techCategoryMap = new Map<
+  TechnologyCategoryName,
+  TechnologyCategory
+>([
+  [
+    TechnologyCategoryName.ALL,
+    createTechnologyCategory(
+      TechnologyCategoryName.ALL,
+      GoBrowser,
+      Object.values(TechName)
+    ),
+  ],
+  [
+    TechnologyCategoryName.FRONTEND,
+    createTechnologyCategory(TechnologyCategoryName.FRONTEND, GoBrowser, [
+      TechName.HTML5,
+      TechName.CSS,
+      TechName.ANTDESIGN,
+      TechName.MATERIALUI,
+      TechName.NEXTJS,
+      TechName.TAILWINDCSS,
+      TechName.REDUX,
+      TechName.REACT,
+    ]),
+  ],
+  [
+    TechnologyCategoryName.BACKEND,
+    createTechnologyCategory(TechnologyCategoryName.BACKEND, GoServer, [
+      TechName.GRAPHQL,
+      TechName.POSTGRESQL,
+      TechName.MYSQL,
+      TechName.NESTJS,
+      TechName.NODEJS,
+    ]),
+  ],
+  [
+    TechnologyCategoryName.PROGRAMING_LANGUAGE,
+    createTechnologyCategory(
+      TechnologyCategoryName.PROGRAMING_LANGUAGE,
+      SiJavascript,
+      [
+        TechName.JAVASCRIPT,
+        TechName.JAVA,
+        TechName.GOLANG,
+        TechName.PYTHON,
+        TechName.TYPESCRIPT,
+      ]
+    ),
+  ],
+  [
+    TechnologyCategoryName.DEVOPS,
+    createTechnologyCategory(TechnologyCategoryName.DEVOPS, FaDev, [
+      TechName.AWS,
+      TechName.DOCKER,
+      TechName.NGINX,
+      TechName.GITHUB_ACTIONS,
+      TechName.GIT,
+      TechName.SVN,
+      TechName.LINUX,
+    ]),
+  ],
+  [
+    TechnologyCategoryName.EDITOR,
+    createTechnologyCategory(
+      TechnologyCategoryName.EDITOR,
+      SiVisualstudiocode,
+      [
+        TechName.VIM,
+        TechName.VSCODE,
+        TechName.ECLIPSE,
+        TechName.INTELLIJ_IDEA,
+        TechName.GOLAND,
+      ]
     ),
   ],
 ]);

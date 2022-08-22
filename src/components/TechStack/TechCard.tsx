@@ -20,13 +20,13 @@ const TechCard = ({techName,...props}:TechCardProps) => {
     return (
         <Link href={technology.url}>
             <a target="_blank" >
-                <div className='flex p-4 rounded-xl border bg-gray-800 border-gray-700 items-center'>
+                <div className='group flex p-4 rounded-xl border bg-gray-800 border-gray-700 items-center hover:translate-y-[-5px] ease-in-out transition-transform duration-500'>
                     <div className='rounded-lg p-1 relative w-8 h-8 flex items-center'>
                         <div className={"absolute opacity-25 top-0 left-0 w-full h-full rounded-lg"} style={{backgroundColor:technology.backgroundColor}}></div>
                         <img src={technology.image} className="w-full "></img>
                     </div>
                     <div className='ml-4'>
-                        <p className='font-bold '>{technology.name}</p>
+                        <p className='font-bold group-hover:text-blue-300 transition-colors duration-500 ease-out'>{technology.name}</p>
                         <p className='text-xs'>{technology.description}</p>
                     </div>
 

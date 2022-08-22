@@ -1,4 +1,5 @@
 import Section from "../Section/Section";
+import SectionSubTitle from "../Section/SectionSubTitle";
 import SectionTitle from "../Section/SectionTitle";
 import Button from "./Button";
 
@@ -11,7 +12,7 @@ const Hero = ({}:HeroProps) => {
     return (
         <Section>
         <SectionTitle>Nikolay Advolodkin</SectionTitle>
-        <p className="mb-4 md:font-light text-white/50">My life's mission is to create world-class software</p>
+        <SectionSubTitle>My life's mission is to create world-class software</SectionSubTitle>
         <Button>About me</Button>
         </Section>
     );

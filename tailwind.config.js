@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+let plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -24,7 +25,10 @@ module.exports = {
     
   
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), plugin(function ({ addVariant }) {
+    // Add a `third` variant, ie. `third:pb-0`
+    addVariant(`aria-selected`,`[aria-selected="true"]&`)
+  })],
   daisyui:{
     themes:["night"]
   }
