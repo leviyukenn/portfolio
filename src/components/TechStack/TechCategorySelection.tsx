@@ -14,7 +14,7 @@ const TechCategorySelection = ({techCategory,setTechCategory}: TechCategorySelec
   return (
     <ul className="flex justify-center flex-wrap gap-2 my-4">
       {techCategories.map((techCategoryName, index) => (
-        <li>
+        <li key={index}>
           <TechCategoryButton techCategoryName={techCategoryName} key={index} isActive={techCategory === techCategoryName}   onClick={onClick(techCategoryName)}/>
         </li>
       ))}

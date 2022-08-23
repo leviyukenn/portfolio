@@ -36,7 +36,7 @@ const TechStack = ({}: TechStackProps) => {
         />
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 grid-flow-dense">
           {techStack.map((techName, index) => (
-            <li key={index}>
+            <li key={index} >
               <TechCard techName={techName as TechName}></TechCard>
             </li>
           ))}

@@ -12,6 +12,7 @@ const SocialIcon = ({ href, children, className, ...props }:SocialIconProps) => 
   return (
     <Link href={href}>
       <a
+      target="_blank"
         className={
           "ease-in text-white rounded-full p-1 hover:bg-[#212d45]  hover:scale-125 cursor-pointer flex items-center" +
           (className?" " +
