@@ -27,7 +27,7 @@ const TechStack = ({}: TechStackProps) => {
       <SectionDivider></SectionDivider>
       <SectionTitle>Tech Stack</SectionTitle>
       <SectionSubTitle>
-      A list of my favorite tools and technologies.
+      Here's a list of my favorite tools and technologies.
       </SectionSubTitle>
       <div className="mx-auto w-full md:w-[80%]">
         <TechCategorySelection
