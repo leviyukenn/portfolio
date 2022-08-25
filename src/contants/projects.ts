@@ -46,7 +46,7 @@ export const projects: ProjectType[] = [
       TechName.TYPESCRIPT,
     ],
     source: "https://github.com/leviyukenn/portfolio",
-    visit: "#",
+    visit: "#hero",
     id: 1,
   },
 ];

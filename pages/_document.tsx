@@ -12,7 +12,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html style={{scrollBehavior:"smooth"}}>
         <Head />
         <body>
           <Main />

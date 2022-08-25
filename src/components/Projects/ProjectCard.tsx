@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ProjectType } from "../../contants/projects";
 import TechTag from "../TechStack/TechTag";
 
@@ -5,7 +6,7 @@ interface ProjectCardProps {
   project: ProjectType;
 }
 const ProjectCard = ({
-  project: { id, title, image, description, tags },
+  project: { id, title, image, description, tags, visit, source },
 }: ProjectCardProps) => {
   return (
     <div className="rounded-xl sm:w-[400px] w-full shadow-project-card flex flex-col">
@@ -20,13 +21,21 @@ const ProjectCard = ({
       <ul className="flex px-6 flex-wrap ">
         {tags.map((techName, index) => (
           <li key={index} className="p-1">
-          <TechTag techName={techName}></TechTag>
+            <TechTag techName={techName}></TechTag>
           </li>
         ))}
       </ul>
       <div className="flex justify-around my-4">
-        <button className="btn btn-outline btn-sm">View App</button>
-        <button className="btn btn-outline btn-sm">Source Code</button>
+        <Link href={visit}>
+          <a  className="btn btn-outline btn-sm">
+            View App
+          </a>
+        </Link>
+        <Link href={source}>
+          <a  className="btn btn-outline btn-sm">
+            Source Code
+          </a>
+        </Link>
       </div>
     </div>
   );

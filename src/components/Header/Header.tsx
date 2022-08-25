@@ -11,7 +11,7 @@ interface HeaderProps {}
 
 const Header = ({}: HeaderProps) => {
 
-  const linkArr = [["Projects","#projects"],["Technologies","#tech"],["About","#about"]]
+  const linkArr = [["Projects","#projects"],["Tech Stack","#tech"],["About","#about"]]
   return (
     <div className="grid grid-cols-[repeat(5,minmax(min-content,1fr))] auto-rows-[60px] gap-2 items-center grid-flow-dense  px-2 pt-3 pb-2">
       <div className="col-span-2 sm:col-span-1">

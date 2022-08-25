@@ -23,7 +23,7 @@ const TechStack = ({}: TechStackProps) => {
   const techStack = Object.values(techCategoryInfo.technologies);
 
   return (
-    <Section>
+    <Section id="tech">
       <SectionDivider></SectionDivider>
       <SectionTitle>Tech Stack</SectionTitle>
       <SectionSubTitle>

@@ -5,9 +5,9 @@ interface SectionProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTML
 
 }
 
-const Section = ({children}:SectionProps) => {
+const Section = ({children,...props}:SectionProps) => {
     return (
-        <section className='max-w-3xl px-6 lg:px-0 flex-col mx-auto mb-8'>
+        <section className='max-w-3xl px-6 lg:px-0 flex-col mx-auto mb-8' {...props}>
             {children}
         </section>
     );

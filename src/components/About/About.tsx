@@ -8,7 +8,7 @@ interface AboutProps {}
 
 const About = ({}: AboutProps) => {
   return (
-    <Section>
+    <Section id="about">
       <SectionDivider />
       <SectionTitle>About Me</SectionTitle>
       <h1 className="text-3xl text-gray-200 animate-bounce">

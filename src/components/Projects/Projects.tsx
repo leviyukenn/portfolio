@@ -8,7 +8,7 @@ interface ProjectsProps {}
 
 const Projects = ({}: ProjectsProps) => {
   return (
-    <Section>
+    <Section id="projects">
       <SectionDivider></SectionDivider>
       <SectionTitle>Projects</SectionTitle>
       <div className="grid sm:grid-cols-projects gap-8 sm:p-12  justify-items-center auto-rows-max">
