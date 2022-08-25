@@ -17,7 +17,7 @@ const ProjectCard = ({
         <hr className="w-14 h-1 bg-button-back rounded-md border-0"></hr>
       </div>
       <p className="w-full  p-6  text-slate-200 ">{description}</p>
-      <ul className="flex px-6 ">
+      <ul className="flex px-6 flex-wrap ">
         {tags.map((techName, index) => (
           <li key={index} className="p-1">
           <TechTag techName={techName}></TechTag>

@@ -16,7 +16,7 @@ const Qualification = ({}: QualificationProps) => {
           <div className="stat-desc text-xs whitespace-normal">Test of English for International Communication</div>
         </div>
         <div className="stat bg-gray-700 rounded-xl">
-          <div className="stat-title">JLPT</div>
+          <div className="stat-title">JLPT N1</div>
           <div className="stat-value text-xl">180 / 180</div>
           <div className="stat-desc text-xs whitespace-normal">The Japanese-Language Proficiency Test</div>
         </div>
@@ -27,7 +27,7 @@ const Qualification = ({}: QualificationProps) => {
         </div>
         <div className="stat bg-gray-700 rounded-xl">
           <div className="stat-title">Scholarship</div>
-          {/* <div className="stat-value text-xl">80 / 120</div> */}
+          <div className="stat-value text-xl">2019 - 2020</div>
           <div className="stat-desc text-xs whitespace-normal">Rotary Yoneyama Scholarship</div>
         </div>
       </div>

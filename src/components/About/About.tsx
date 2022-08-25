@@ -19,7 +19,7 @@ const About = ({}: AboutProps) => {
         <br/>
         My name is 余 君宇(Junyu Yu) or you can call me ヨクンウ in Japanese.
         <br/>
-        I'm a web engineer and now work in Tokyo. It's my pleasure to have an opportunity to work with you😄.
+        I'm a web engineer and now work in Tokyo. It would be my pleasure to have an opportunity to work with you😄.
       </p>
       <div className="mx-auto w-full md:w-[80%] ">
         {

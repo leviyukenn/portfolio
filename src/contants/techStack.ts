@@ -477,6 +477,7 @@ export const techCategoryMap = new Map<
       TechName.TAILWINDCSS,
       TechName.REDUX,
       TechName.REACT,
+      TechName.GRAPHQL,
     ]),
   ],
   [

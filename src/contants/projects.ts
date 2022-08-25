@@ -1,66 +1,52 @@
 import { TechName } from "./techStack";
 
 export interface ProjectType {
-    title:string;
-    description:string;
-    image:string;
-    tags:TechName[];
-    source:string;
-    visit:string;
-    id:number;
+  title: string;
+  description: string;
+  image: string;
+  tags: TechName[];
+  source: string;
+  visit: string;
+  id: number;
+}
 
-} 
-
-export const projects:ProjectType[] = [
-    {
-        title: 'Ultimate QA',
-        description:
-            'Created a community of 100K+ developers and SDETS to help each other create better code.',
-        image: '/images/ultimateqa.webp',
-        tags: [TechName.REACT, TechName.NESTJS],
-        source: '#',
-        visit: 'https://ultimateqa.com/',
-        id: 0,
-    },
-    {
-        title: 'Github User Search',
-        description:
-            'Created a web application that allows users to search for Github users and see their profile information. Tested and deployed.',
-        image: '/images/github-users-search.webp',
-        tags: [TechName.REACT, TechName.NESTJS],
-        source: 'https://github.com/nadvolod/js-code/tree/master/github-user-search',
-        visit: 'https://gh-users-search.netlify.app/',
-        id: 1,
-    },
-    {
-        title: 'Sauce Bindings',
-        description:
-            'Co-created an open source project that allows users to interact with Sauce Labs through a beautiful API.',
-        image: '/images/sauce-bindings.webp',
-        tags: [TechName.REACT, TechName.NESTJS],
-        source: 'https://github.com/saucelabs/sauce_bindings',
-        visit: 'https://opensource.saucelabs.com/sauce_bindings/docs/overview.html',
-        id: 2,
-    },
-    {
-        title: 'Birthday Reminder App',
-        description:
-            "A simple app that allows users to track their friends' birthdays.",
-        image: '/images/birthday-reminder.webp',
-        tags: [TechName.REACT, TechName.NESTJS],
-        source: 'https://github.com/nadvolod/js-code/tree/master/birthday-reminder',
-        visit: 'https://laughing-feynman-11feb4.netlify.app/',
-        id: 3,
-    },
-    {
-        title: 'Dev Portfolio Website',
-        description:
-            'A mobile-first, responsive, sleek website to show off my skills.',
-        image: '/images/portfolio.webp',
-        tags: [TechName.REACT, TechName.NESTJS],
-        source: 'https://github.com/nadvolod/js-code/tree/master/dev-portfolio',
-        visit: 'https://nikolay.tech',
-        id: 4,
-    },
-]
-
+export const projects: ProjectType[] = [
+  {
+    title: "Imreddit",
+    description:
+      "A reddit-like discussion website. Registered users submit content to the site such as links, text posts, image posts, which are then voted up or down by other members. ",
+    image: "/images/imreddit.png",
+    tags: [
+      TechName.REACT,
+      TechName.NEXTJS,
+      TechName.GRAPHQL,
+      TechName.NESTJS,
+      TechName.NODEJS,
+      TechName.TYPESCRIPT,
+      TechName.REDUX,
+      TechName.MATERIALUI,
+      TechName.POSTGRESQL,
+      TechName.AWS,
+      TechName.DOCKER,
+      TechName.GITHUB_ACTIONS,
+      TechName.NGINX,
+    ],
+    source: "https://github.com/leviyukenn/imreddit-client",
+    visit: "https://client.imreddit-apis.link/",
+    id: 0,
+  },
+  {
+    title: "Portfolio",
+    description: "A mobile-first, responsive website to show off my skills.",
+    image: "/images/portfolio.png",
+    tags: [
+      TechName.REACT,
+      TechName.NEXTJS,
+      TechName.TAILWINDCSS,
+      TechName.TYPESCRIPT,
+    ],
+    source: "https://github.com/leviyukenn/portfolio",
+    visit: "#",
+    id: 1,
+  },
+];

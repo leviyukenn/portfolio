@@ -10,7 +10,7 @@
   }
   html {
     @apply sm:text-[20px];
-    @apply md:text-[24px];
+    @apply md:text-[20px];
   }
   body {
 
