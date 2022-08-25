@@ -139,7 +139,7 @@ export const techStackMap = new Map<TechName, Technology>([
       TechName.NESTJS,
       SiNestjs,
       "https://docs.nestjs.com/",
-      "/images/techStack/NestJS.svg",
+      "/images/techStack/Nestjs.svg",
       "#DD2C50",
       "Node.js framework."
     ),
