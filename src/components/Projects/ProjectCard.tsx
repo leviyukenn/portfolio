@@ -10,7 +10,8 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className="rounded-xl sm:w-[400px] w-full shadow-project-card flex flex-col">
-      <img className="w-full h-full rounded-t-xl" src={image} alt={title}></img>
+        <div>
+      <img className="w-full  object-cover overflow-hidden rounded-t-xl" src={image} alt={title}></img></div>
       <div className="flex flex-col items-center">
         <h3 className="font-medium tracking-widest text-sky-200 py-2 text-xl">
           {title}
