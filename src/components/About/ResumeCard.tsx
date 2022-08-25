@@ -30,7 +30,7 @@ const ResumeCard = ({ resume }: ResumeCardProps) => {
           </ul>
         </div>
       </div>
-      <p className="hidden sm:block text-xs">{resume.duration}</p>
+      <p className="hidden sm:block text-xs min-w-[20%]">{resume.duration}</p>
     </div>
   );
 };
