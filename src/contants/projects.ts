@@ -13,7 +13,7 @@ export interface ProjectType {
 export const projects: ProjectType[] = [
   {
     title: "Imreddit",
-    description: `A reddit-like discussion website. Registered users submit content to the site such as links, text posts, image posts, which are then voted up or down by other members. <br/><br/>You can login with  or register your own account<br/>username:admin <br/>password:admin`,
+    description: `A reddit-like discussion website. Registered users submit content to the site such as links, text posts, image posts, which are then voted up or down by other members. <br/><br/>You can login with <br/>username:admin <br/>password:admin`,
     image: "/images/imreddit.png",
     tags: [
       TechName.REACT,
