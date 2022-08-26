@@ -350,7 +350,7 @@ export const techStackMap = new Map<TechName, Technology>([
       "https://www.nginx.com/",
       "/images/techStack/nginx.png",
       "#1A9544",
-      "Devops"
+      "Web server"
     ),
   ],
   [

@@ -18,7 +18,7 @@ const ProjectCard = ({
         </h3>
         <hr className="w-14 h-1 bg-button-back rounded-md border-0"></hr>
       </div>
-      <p className="w-full  p-6  text-slate-200 ">{description}</p>
+      <p className="w-full  p-6  text-slate-200 " dangerouslySetInnerHTML={{__html:description}}></p>
       <ul className="flex px-6 flex-wrap ">
         {tags.map((techName, index) => (
           <li key={index} className="p-1">
